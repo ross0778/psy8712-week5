@@ -22,5 +22,3 @@ ABclean_tbl <- Bdata_tbl %>%
   filter(is.na(notes)) %>% 
   bind_rows("B" = ., "A" = Aclean_tbl, .id = "lab") %>% 
   select(-notes)
-  
-
